@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The ARTicles | Connection Detail</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs') -%>
+    <h1>the ARTicles | Connection Detail</h1>
+    <% if (profile != undefined) { %>
+      <%- include ('partials/userNav.ejs') -%>
+    <% } else { %>
+      <%- include ('partials/nav.ejs') -%>
+    <% } %>
+  </header>
+
+  <main id="connection_main">
+    <section>
+      <h2><%= connection.topic %></h2>
+      <img src="/../assets/images/hostImage.jpg" width="90" height="90" alt="Image of the event host">
+      <p class="connection_details">
+        Event hosted by <%= connection.name %><br>
+        <%= connection.when %><br>
+      </p>
+    </section>
+    <section>
+      <h2>Description</h2>
+      <p><%= connection.details %></p>
+    </section>
+  </main>
+
+  <aside>
+    <p>Will you be going?</p>
+    <button onclick="location.href='/connections/saved'" type="button">Yes</button>
+    <button onclick="location.href='/connections/saved'" type="button">Maybe</button>
+    <button onclick="location.href='/connections/saved'" type="button">No</button>
+  </aside>
+
+  <%- include ('partials/footer.ejs') -%>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The ARTicles</title>
+    <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <%- include ('partials/logo.ejs'); -%>
+      <h1>the ARTicles</h1>
+      <% if (profile != undefined) { %>
+        <%- include ('partials/userNav.ejs') -%>
+      <% } else { %>
+        <%- include ('partials/nav.ejs') -%>
+      <% } %>
+    </header>
+    <main>
+      <h1>404</h1>
+      <p>Sorry, we couldn't find what you were looking for.</p>
+    </main>
+    <%- include ('partials/footer.ejs') -%>
+  </body>
+</html>

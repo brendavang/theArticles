@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The ARTicles</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs'); -%>
+    <h1>the ARTicles</h1>
+    <% if (profile != undefined) { %>
+      <%- include ('partials/userNav.ejs') -%>
+    <% } else { %>
+      <%- include ('partials/nav.ejs') -%>
+    <% } %>
+  </header>
+
+
+  <main>
+    <article id="welcome_msg">
+      <h2>Welcome to the ARTicles.</h2>
+      <p>Here is where local artists can connect in the Charlotte area. Whether you're looking to ask for art advice or simply looking for friends to draw together, here is the place.</p>
+      <p>Check out the connections page to see who wants to connect.</p>
+    </article>
+  </main>
+  <%- include ('partials/footer.ejs') -%>
+</body>
+
+</html>

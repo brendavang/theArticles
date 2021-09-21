@@ -1,0 +1,123 @@
+:root {
+    font-size: 18px;
+    font-family: 'Avenir', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+article, aside, footer, header, main, nav, section {
+    display: block;
+}
+
+#home_link { /* styling for the home image so that it stays to the left of the page */
+    float: left;
+    margin-left: 25px;
+}
+
+nav ul, footer ul {
+    margin: 10px 25px;
+    list-style-type: none;
+    padding: 10px 20px;
+    overflow: hidden;
+    background-color: rgb(41, 42, 44);
+
+}
+
+nav li, footer li {
+    display: inline;
+}
+
+nav li a, footer li a {
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.general_nav { /* styling for general site navigation so it floats to left of the navigation bar */
+    float: left;
+}
+
+.user_specific { /* styling for user specific navigation so it floats to right of the navigation bar */
+    float: right;
+}
+
+main {
+    margin: 45px;
+    padding: 25px 100px;
+    height: 64vh;
+}
+
+h2 {
+    margin: 3px 0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 3px;
+}
+
+#welcome_msg {
+    margin: 50px;
+}
+
+.connection_details { /* syling for the connection details on the connection page */
+    display: inline-block;
+    margin-left: 25px;
+}
+
+#connection_main { /* syling for the main element on the connection page */
+    width: 600px;
+    float: left;
+    padding-right: 0px;
+    margin-right: 15px;
+}
+
+aside {
+    float: right;
+    margin: 45px 45px 45px 5px;
+    text-align: center;
+    width: 250px;
+    padding: 100px 55px 10px 0px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 8px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(41, 42, 44);
+    color: white;
+}
+
+footer ul {
+    margin: 0;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>About the ARTicles</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs') -%>
+    <h1>the ARTicles | About</h1>
+    <% if (profile != undefined) { %>
+      <%- include ('partials/userNav.ejs') -%>
+    <% } else { %>
+      <%- include ('partials/nav.ejs') -%>
+    <% } %>
+  </header>
+
+  <main>
+    <p>The ARTicles is a website where local Charlotte artists can meet up and make art together.</p>
+  </main>
+
+  <%- include ('partials/footer.ejs') -%>
+</body>
+
+</html>

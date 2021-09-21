@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>About the ARTicles</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs') -%>
+    <h1>the ARTicles | Sign Up</h1>
+    <%- include ('partials/nav.ejs') -%>
+  </header>
+
+  <main>
+    <h1>Create an account</h1>
+    <form action="" method="post">
+      <label for="username">Username</label>
+      <input type="text" name="username" value=""><br>
+      <label for="password">Password</label>
+      <input type="text" name="password" value=""><br>
+      <label for="password">Confirm Password</label>
+      <input type="text" name="confirm-password" value="">
+      <input type="submit" name="submit">
+    </form>
+  </main>
+
+  <%- include ('partials/footer.ejs') -%>
+</body>
+
+</html>

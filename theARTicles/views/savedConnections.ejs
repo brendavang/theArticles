@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The ARTicles | Saved connections</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs') -%>
+    <h1>the ARTicles | Saved connections</h1>
+    <%- include ('partials/nav.ejs') -%>
+  </header>
+
+  <main>
+    <h2>Jane's connections</h2>
+    <table>
+      <tr>
+        <th>Connnection</th>
+        <th>Category</th>
+        <th>Going?</th>
+        <th>Options</th>
+      </tr>
+      <tr>
+        <td>Landscape Painting on UNCC campus</td>
+        <td>Meet ups</td>
+        <td>Yes</td>
+        <td><button onclick="location.href=''" type="button">Update</button> <button onclick="location.href=''" type="button">Delete</button></td>
+      </tr>
+      <tr>
+        <td>Painting</td>
+        <td>Art Critque</td>
+        <td>Maybe</td>
+        <td><button onclick="location.href=''" type="button">Update</button> <button onclick="location.href=''" type="button">Delete</button></td>
+      </tr>
+    </table>
+  </main>
+
+  <%- include ('partials/footer.ejs') -%>
+
+</body>
+
+</html>

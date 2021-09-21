@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The ARTicles | Connections</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs') -%>
+    <h1>the ARTicles | Connections</h1>
+    <% if (profile != undefined) { %>
+      <%- include ('partials/userNav.ejs') -%>
+    <% } else { %>
+      <%- include ('partials/nav.ejs') -%>
+    <% } %>
+  </header>
+
+  <main>
+    <section>
+      <h2>Meet-up</h2>
+      <ul>
+        <% connections.forEach((connection) => { %>
+          <% if (connection.topic === "Meet-up") { %>
+            <li><a href="connections/details/<%= connection.id %>"><%= connection.details %></a></li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </section>
+    <section>
+      <h2>Forum</h2>
+      <ul>
+        <% connections.forEach((connection) => { %>
+          <% if (connection.topic === "Forum") { %>
+            <li><a href="connections/details/<%= connection.id %>"><%= connection.details %></a></li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </section>
+  </main>
+
+  <%- include ('partials/footer.ejs') -%>
+
+</body>
+
+</html>

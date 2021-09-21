@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "0",
+    "name" : "Jane",
+    "topic" : "Meet-up",
+    "details" : "Hello, would anyone be interested in joining me in landscape painting on the UNCC campus?",
+    "when" : "August 29, 2021 at 3:30pm - 5:30pm"
+  },
+  {
+    "id" : "1",
+    "name" : "Mario",
+    "topic" : "Meet-up",
+    "details" : "I would love to meet-up and draw with some people!",
+    "when" : "August 3, 2021 at 5:30pm - 8:30pm"
+  },
+  {
+    "id" : "2",
+    "name" : "Wanda",
+    "topic" : "Meet-up",
+    "details" : "New to Charlotte! Would love some art friends!",
+    "when" : "June 29, 2021 at 11:30am - 1:00pm"
+  },
+  {
+    "id" : "3",
+    "name" : "Ned",
+    "topic" : "Forum",
+    "details" : "Your thoughts on the murals in NoDa?",
+    "when" : "September 25, 2021 at 10:31am"
+  },
+  {
+    "id" : "4",
+    "name" : "Jenny",
+    "topic" : "Forum",
+    "details" : "Best local tattoo artists?",
+    "when" : "Auguest 11, 2021 at 8:21am"
+  },
+  {
+    "id" : "5",
+    "name" : "Joe",
+    "topic" : "Forum",
+    "details" : "Thoughts on drawing in public?",
+    "when" : "September 15, 2021 at 11:32am"
+  }
+]

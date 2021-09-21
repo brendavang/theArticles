@@ -1,0 +1,16 @@
+[
+    {
+        "username": "asdf",
+        "firstName": "Joe",
+        "lastName": "Shmoe",
+        "email": "joeshmmoe@email.com",
+        "tempPassword": "asdf"
+    },
+    {
+        "username": "bob",
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "email": "bobsmith@email.com",
+        "tempPassword": "bob"
+    }
+]

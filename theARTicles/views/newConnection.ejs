@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>the ARTicles | Create a Connection</title>
+  <link href="/../assets/stylesheets/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header>
+    <%- include ('partials/logo.ejs') -%>
+    <h1>the ARTicles | Create a Connection</h1>
+    <% if (profile != undefined) { %>
+      <%- include ('partials/userNav.ejs') -%>
+    <% } else { %>
+      <%- include ('partials/nav.ejs') -%>
+    <% } %>
+  </header>
+
+  <main>
+    <form id="connection-form" action="/connections" method="post">
+      <label for="topic">Topic</label>
+      <input type="text" name="topic" value="<%= connection.topic %>"><br>
+      <label for="details">Description</label>
+      <textarea name="details" rows="4" cols="50" value="<%= connection.details %>"></textarea><br>
+      <label for="when">When</label>
+      <input type="text" name="when" value="<%= connection.when %>"><br>
+      <input type="submit" name="submit"" class="btn btn-primary">
+    </form>
+  </main>
+
+  <%- include ('partials/footer.ejs') -%>
+</body>
+
+</html>
